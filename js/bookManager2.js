@@ -6,6 +6,7 @@ class BookManager {
     // Set the currentId value to currentId
     this.currentId = currentId;
   }
+  /*Add new books */
   // Create a method with an object to add a book
   addBook(title, author, language, date) {
     const newBook = {
@@ -17,6 +18,8 @@ class BookManager {
     }
     // push the new book into the array 
     this.books.push(newBook);
+
+    /*Display cards of books*/
     
     // Get the Javascript object new Date, give it the argument newBook.date, and assign it to a variable
     const publishedDate = new Date(newBook.date);
